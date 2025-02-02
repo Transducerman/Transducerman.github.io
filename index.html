@@ -101,6 +101,13 @@
 <p>也可以不使用命令自己创建 .md 文件，只需在文件开头手动加入如下格式 Front-matter 即可，写完后运行 <code>hexo g</code> 和 <code>hexo d</code> 发布。</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World # 标题</span><br><span class="line">date: 2019/3/26 hh:mm:ss # 时间</span><br><span class="line">categories: # 分类</span><br><span class="line">- Diary</span><br><span class="line">tags: # 标签</span><br><span class="line">- PS3</span><br><span class="line">- Games</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">摘要</span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">正文</span><br></pre></td></tr></table></figure>
 
+<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><p>**引用图片时要么用 “\\” 要么用 “&#x2F;” **</p>
+<p>插入图片的格式如下：</p>
+<p>“!<a href="/%E5%9B%BE%E7%89%87%E6%89%80%E5%9C%A8%E6%96%87%E4%BB%B6%E5%A4%B9/%E5%9B%BE%E7%89%87%E5%90%8D%E7%A7%B0.jpg">图片名称</a>”</p>
+<p>其中，图片名称在网页中不会显示，路径为相对路径，第一个 “&#x2F;” 代表的主目录是<strong>source</strong>，图片所在文件夹在source下，其名称可与同目录下的_posts中的相应md博客保持同名，代表该文件夹用于存储某博客中引用的图片。</p>
+<p>这种图片引用格式在typora中无法显示，因为typora默认的主目录不是source，而是当前md所处的_posts文件夹，所以想在typora中同样显示图片可以把图片所在文件夹复制一份放到 _posts文件夹下。</p>
+<p><img src="/%E6%96%87%E4%BB%B6%E5%A4%B9/%E5%9B%BE%E7%89%87%E5%90%8D%E7%A7%B0.jpg" alt="图片名称"></p>
+
       
     </div>
     <footer class="article-footer">
